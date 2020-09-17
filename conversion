@@ -1,0 +1,24 @@
+
+def dylos1100_pro_to_aqi(pm25):
+    a7=3.31E-22
+    b7=-1.04E-16
+    c7=1.19E-11
+    d7=-0.0000005847
+    e7=0.01563
+    f7=9.428
+
+    B3=pm25
+
+    aqi=(a7 * B3**5) + (b7 * B3**4) + (c7 * B3**3) + (d7 * B3**2) + (e7 * B3) + f7
+
+    return aqi
+
+
+for p in range(0, 1000, 100):
+    print(p, dylos1100_pro_to_aqi(p))
+
+for p in range(1000, 10000, 500):
+    print(p, dylos1100_pro_to_aqi(p))
+
+for p in range(10000, 50000, 2000):
+    print(p, dylos1100_pro_to_aqi(p))

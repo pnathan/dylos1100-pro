@@ -1,0 +1,6 @@
+python code for processing dylos1100-pro output.
+
+presumes owning a dylos1100-pro, linux, python3, bash, as well as a serial-usb port
+
+
+license: agpl3
