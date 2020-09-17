@@ -9,7 +9,7 @@ with serial.Serial('/dev/ttyUSB0', 9600, timeout=31) as ser:
     line=ser.readline().decode('ascii').strip().split(',')
     if line != '':
         try:
-            d = { '<pm2.5': line[0],
+            d = { '>pm2.5': line[0],
                   '>pm10' : line[1] }
             print(json.dumps(d))
         except IndexError:
