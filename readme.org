@@ -1,3 +1,5 @@
+* Dylos1100-Pro Automation
+
 python code for processing dylos1100-pro output.
 
 presumes owning a dylos1100-pro, linux, python3, bash, as well as a serial-usb cable
@@ -6,14 +8,14 @@ presumes owning a dylos1100-pro, linux, python3, bash, as well as a serial-usb c
 
 1. `pip install serial` for reading the port
 
-2. adjust dylos.sh to write to your own data store. Or, hey, ping me if
-you want to experiment with my data ingest system.
+2. adjust dylos.sh to write to your own data store. Or, hey, ping me
+   if you want to experiment with my data ingest system.
 
 3. run dylos.sh, watch the data flow.
 
 
 
-hacking notes:
+* hacking notes:
 
 configure the serial line at 9600,8n1
 
@@ -22,5 +24,8 @@ The format is `>pm05, >pm25<cr><lf>` every minute. Not complicated.
 dylos.py reads the serial and outputs it as json.
 
 
+* LEGAL
 
-license: AGPL3. This ain't commercial work.
+license: *AGPL3*.
+
+This ain't commercial work.
