@@ -1,3 +1,12 @@
+# this program prints out an approximation of Dylos1100 >0.1 to AQI.
+# specific AQI standards are more nuanced than this.
+
+
+# The polynomial's coefficients are from a sheet online
+# 'Dylos-AQI-Conversion-Spreadsheet' by a Dr. Iyam Lynch
+
+# no source for the derivation of the coeffs, I'm assuming its a curve
+# fitting.
 
 def dylos1100_pro_to_aqi(pm25):
     a7=3.31E-22
