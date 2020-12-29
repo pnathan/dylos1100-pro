@@ -6,7 +6,7 @@ presumes owning a dylos1100-pro, linux, python3, bash, as well as a serial-usb c
 
 0. connect the cord to your machine, hopefully it autodetects it.
 
-1. `pip install serial` for reading the port
+1. `pip install pyserial` for reading the port
 
 2. adjust dylos.sh to write to your own data store. Or, hey, ping me
    if you want to experiment with my data ingest system.
